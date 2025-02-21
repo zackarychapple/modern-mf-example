@@ -1,6 +1,6 @@
 import { Helmet } from '@modern-js/runtime/head';
 import './index.css';
-import Header from "@/components/header";
+import SsrHeader from '../components/ssr-profile';
 
 const Index = () => (
   <div className="container-box">
@@ -11,8 +11,8 @@ const Index = () => (
         href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
       />
     </Helmet>
+    <SsrHeader />
     <main>
-      <Header/>
       <div className="title">
         Welcome to
         <img
